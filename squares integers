@@ -1,0 +1,6 @@
+#Don't write one function that squares integers, and another that squares floats. Write one function that handles all numbers
+
+def cuadrados(*numeros):
+  cuadrado = [numero*numero for numero in numeros]
+  return cuadrado
+cuadrados(2,3,4,5.5,1.1,2)
