@@ -1,0 +1,13 @@
+#given a list of integers my list,produces a new list in which even numbers in mylist are multiplicated by 5 and odd numbers in my list are multiplied by 3
+
+def enteros_pares_impares(numeros):
+  lista_nueva=[]
+  for numero in numeros:
+    if numero % 2 == 0:
+      lista_nueva.append(numero*5)
+    else:
+      lista_nueva.append(numero*3)
+
+  return(lista_nueva)
+
+print(enteros_pares_impares([1, 2, 3,4,5]))
