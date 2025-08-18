@@ -1,0 +1,13 @@
+def lista_creciente(numeros):
+  lista_nueva=list(numeros)
+  for numero in lista_nueva:
+      if numero*5>1000:
+        break
+      if numero==20:
+        lista_nueva.extend([numero*5,100])
+      else:
+        lista_nueva.append(numero*5)
+
+  return lista_nueva
+
+lista_creciente([10,20,30])
