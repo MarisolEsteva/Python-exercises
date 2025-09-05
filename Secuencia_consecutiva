@@ -1,0 +1,12 @@
+def cosecutive_sequence(*numeros):
+  actual=1
+  maximo=1
+  arreglo=sorted(numeros)
+  for i in range(len(arreglo)-1):
+    if arreglo[i+1]==arreglo[i]+1:
+      actual+=1
+      maximo=max(maximo,actual)   
+    elif arreglo[i+1]!=arreglo[i]:
+      actual+=1
+  return maximo
+print(cosecutive_sequence(1,2,100,5,200,3,500,4,130,6))
